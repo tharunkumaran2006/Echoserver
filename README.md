@@ -21,8 +21,8 @@ Testing the server and client
 
 ## PROGRAM:
 
-### Server code:
-# echo-server.py
+## Server code:
+### echo-server.py
 
 import socket
 
@@ -43,8 +43,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 
 
-### Client Code:
-# echo-client.py
+## Client Code:
+### echo-client.py
 
 
 import socket
