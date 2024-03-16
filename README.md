@@ -23,7 +23,7 @@ Testing the server and client
 
 ## Server code:
 ### echo-server.py
-
+```
 import socket
 
 HOST = "127.0.0.1"  # Standard loopback interface address (localhost)
@@ -40,13 +40,13 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             if not data:
                 break
             conn.sendall(data)
-
+```
 
 
 ## Client Code:
 ### echo-client.py
 
-
+```
 import socket
 
 
@@ -61,9 +61,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 
 print(f"Received {data!r}")
-
+```
 ## OUTPUT:
-
+```
 Run server first
 ┌──(kali㉿kali)-[~]
 └─$ python echoserver.py
@@ -72,6 +72,6 @@ Then in another terminal run client
 ──(kali㉿kali)-[~]
 └─$ python echoclient.py
 Received b'Hello, world'
-
+```
 ## RESULT:
 The program is executed successfully
